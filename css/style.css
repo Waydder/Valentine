@@ -1,0 +1,384 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/* birthstone-bounce-regular - latin */
+@font-face {
+    font-family: 'Birthstone Bounce';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+    url('../fonts/birthstone-bounce-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/birthstone-bounce-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* birthstone-bounce-500 - latin */
+@font-face {
+    font-family: 'Birthstone Bounce';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+    url('../fonts/birthstone-bounce-v7-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/birthstone-bounce-v7-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/*Header start*/
+body{
+    font-family: "Birthstone Bounce";
+    color: black;
+    background-color: white;
+}
+.container{
+    min-width: 1900px;
+    margin: 0 auto;
+}
+.header_title{
+    text-shadow: 4px 20px 10px gray;
+    font-size: 120px;
+    line-height: 90px;
+    text-align: center;
+    color: red;
+    padding: 100px 0 0 0;
+}
+.header_items{
+    min-height: 300px;
+    box-shadow: 0 15px 15px -5px rgba(0, 0, 0, .5),
+    0 0 40px rgba(0, 0, 0, .2) inset;
+}
+/*Header end*/
+/*Slider start*/
+.button_item-pic{
+    width: 100px;
+    height: 100px;
+    background: white;
+}
+.slider{
+    position: relative;
+}
+.slider_item-forms{
+    position: absolute;
+    top: 0;
+    right: 150px;
+}
+.slider_valentine-pic{
+    width: 300px;
+    background-color: white;
+}
+.slider_fonts{
+    background: url(../img/sadfas.jpg)0 0/700px 700px no-repeat;
+    background-position: 50%;
+}
+.slider_valentine{
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    margin: 50px 0 50px 50%;
+    transform: translate(-50%);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-radius: 50%;
+}
+.wrapper{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.slider_valentine-pic{
+    margin: 50px 50px 0 100px;
+    width: 300px;
+    height: 300px;
+}
+.slider_valentine img:nth-child(6){
+    margin: 50px 100px 0 100px;
+}
+.slider_valentine img{
+    background-color: white;
+}
+.slider_items{
+    margin: 100px 0 0 0;
+}
+.select_name{
+    position: absolute;
+    top: 0;
+    left: 150px;
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+}
+.select_name-title,.form_info-title{
+    font-family: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.select{
+    padding: 10px;
+    -webkit-box-shadow: 0px 5px 25px 0px rgba(48, 50, 50, 1);
+    -moz-box-shadow:    0px 5px 25px 0px rgba(48, 50, 50, 1);
+    box-shadow:         0px 5px 25px 0px rgba(48, 50, 50, 1);
+    border-radius: 5px;
+    background-color: white;
+    margin: 20px 0 0 0;
+    width: 300px;
+}
+.option_select{
+
+}
+.border_ellipse{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: coral;
+    border-radius: 50%;
+    top: 70px;
+    left: 250px;
+    cursor: pointer;
+}
+.border_ellipse:before{
+    content: "";
+    background-color: deeppink;
+    border-radius: 50%;
+    width: 90px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    cursor: pointer;
+}
+.arrow_left{
+    position: absolute;
+    bottom: 200px;
+    left: 0;
+    width: 700px;
+    height: 200px;
+    background: url(../img/valentine_arrow/arrow.svg) no-repeat center center;
+    transform: rotate(-180deg);
+}
+.arrow_left:before{
+    content: "";
+    background-color: darkorchid;
+    border-radius: 50%;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 75px;
+    left: 500px;
+}
+.arrow_right{
+    position: absolute;
+    bottom: 200px;
+    right: 0;
+    width: 700px;
+    height: 200px;
+    background: url(../img/valentine_arrow/arrow.svg) no-repeat center center;
+}
+.arrow_right:before{
+    content: "";
+    background-color: darkorchid;
+    border-radius: 50%;
+    width: 30px;
+    height: 50px;
+    position: absolute;
+    top: 75px;
+    left: 500px;
+    cursor: pointer;
+}
+textarea{
+    font-family: none;
+    font-size: 18px;
+    padding: 10px 0 0 10px;
+    margin: 20px 0 0 0;
+    width: 300px;
+    height: 100px;
+    outline: none;
+    -moz-appearance: none;
+    resize: none;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+}
+.heart {
+    animation: heartbeat 1s infinite;
+    background-color: red;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+    position: relative;
+    top: 0;
+    transform: rotate(-45deg);
+    position: absolute;
+    right: -23px;
+    top: 95%;
+    width: 30px;
+}
+.heart:before,
+.heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    height: 30px;
+    position: absolute;
+    width: 30px;
+}
+.heart:before {
+    top: -15px;
+    left: 0;
+}
+.heart:after {
+    left: 15px;
+    top: 0;
+}
+@keyframes heartbeat
+{
+    0%
+    {
+        transform: scale( 1 )
+        rotate(-45deg);
+    }
+    20%
+    {
+        transform: scale( 1.25 )
+        rotate(-45deg);
+    }
+    40%
+    {
+        transform: scale( 1.5 )
+        rotate(-45deg);
+    }
+}
+/*Slider end*/
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+}
+.popup:target{
+    opacity: 1;
+    visibility: visible;
+}
+.popup:target .popup_content{
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+.popup_button{
+    display: flex;
+    background-color: red;
+    color: white;
+    margin: 0 auto;
+    padding: 10px 30px;
+    border-radius: 20px;
+    opacity: 0.6;
+    text-decoration: none;
+    transition: 0.4s all ease;
+}
+.popup_button:hover{
+    opacity: 1;
+    transition: 0.4s all ease;
+}
+.popup_body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+    font-family: none;
+}
+
+.popup_content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    width: 600px;
+    padding:0 20px 20px 20px;
+    transition: all 0.8s ease 0s;
+    opacity: 0;
+    transform: translate(0px, -100%);
+}
+.popup_title{
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    margin: 10px 0 20px 0;
+}
+.popup_close{
+}
+.popup_close:before{
+    content: "";
+    width: 25px;
+    height: 2px;
+    color: black;
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    transform: rotate(45deg);
+}
+.popup_close:after{
+    content: "";
+    width: 25px;
+    height: 2px;
+    color: black;
+    background-color: black;
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    transform: rotate(-45deg);
+}
+.popup_area{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.popup_name{
+    margin: 0 0 20px 0;
+    font-style: italic;
+    font-size: 30px;
+}
+.popup_text{
+    margin: 0 0 50px 0;
+    font-style: inherit;
+    font-size: 16px;
+}
+

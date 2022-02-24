@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Valentine Days</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main>
+    <div class="container">
+    <header id="header">
+        <section class="headers">
+            <div class="header_items">
+                <h1 class="header_title">
+                    Happy Valentine's Days
+                </h1>
+            </div>
+        </section>
+    </header>
+    <section class="slider">
+        <div class="wrapper">
+            <div class="slider_items">
+                <div class="select_name">
+                    <h2 class="select_name-title">
+                        Оберіть отримувача :
+                    </h2>
+                    <select class="select" id="valentine_name" name="name">
+                        <option value="Артур Стаднік">Артур Стаднік</option>
+                        <option value="Стаднік Артур">Стаднік Артур</option>
+                    </select>
+                </div>
+                <div class="slider_item-forms">
+                    <form class="form_info" id="valentine" action="post" method="get">
+                        <h2 class="form_info-title">
+                            Напишіть повідомлення :
+                        </h2>
+                        <textarea id="valentine_text" name="text"></textarea>
+                        <a href="#popup" id="valentine_button" class="popup_link">
+                            <div class="heart"></div>
+                        </a>
+                    </form>
+                </div>
+                <div class="slider_item-slider">
+                    <a href="" class="slider_arrow-left">
+                        <div class="arrow_left">
+                            <div class="border_ellipse"></div>
+                        </div>
+                    </a>
+                    <a href="" class="slider_arrow-right">
+                        <div class="arrow_right">
+                            <div class="border_ellipse"></div>
+                        </div>
+                    </a>
+                    <div class="slider_fonts">
+                        <div class="slider_valentine">
+                            <img src="img/valentine_slider/valentine_pic2.png" alt="" class="slider_valentine-pic">
+                            <img src="img/valentine_slider/valentine_pic3.png" alt="" class="slider_valentine-pic">
+                            <img src="img/valentine_slider/valentine_pic2.png" alt="" class="slider_valentine-pic">
+                            <img src="img/valentine_slider/valentine_pic3.png" alt="" class="slider_valentine-pic">
+                            <img src="img/valentine_slider/valentine_pic2.png" alt="" class="slider_valentine-pic">
+                            <img src="img/valentine_slider/valentine_pic3.png" alt="" class="slider_valentine-pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <div class="popup" id="popup">
+        <a href="#header" class="popup_area"></a>
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#header" class="popup_close"></a>
+                <div class="popup_title">
+                    Повідомлення :
+                </div>
+                <div class="popup_name" id="recipient"></div>
+                <div class="popup_text" id="message"></div>
+                <button class="popup_button">Відправити</button>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="./js/scripts.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
